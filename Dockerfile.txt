@@ -1,27 +1,22 @@
-# 1) Build stage
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-WORKDIR /src
-
-# Copia csproj y restaura dependencias primero (caché de capas)
-COPY ["VoskRealtimeApi.csproj", "./"]
-RUN dotnet restore "./VoskRealtimeApi.csproj"
-
-# Copia todo y publica en modo Release
-COPY . .
-RUN dotnet publish "VoskRealtimeApi.csproj" -c Release -o /app/publish
-
-# 2) Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
+# Etapa de construcción
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Variables de entorno para que ASP.NET Core use el puerto que Fly asigna
-ENV ASPNETCORE_URLS=http://*:${PORT:-80}
+# Copiar archivos de proyecto y restaurar dependencias
+COPY *.csproj ./
+RUN dotnet restore
 
-# Copia los artefactos publicados
-COPY --from=build /app/publish .
+# Copiar el resto del código y compilar la aplicación
+COPY . ./
+RUN dotnet publish -c Release -o out
 
-# Exponer el puerto (no obligatorio: Fly lo asigna)
+# Etapa de ejecución
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+COPY --from=build /app/out .
+
+# Exponer el puerto en el que la aplicación escuchará
 EXPOSE 80
 
-# Punto de entrada
+# Comando para ejecutar la aplicación
 ENTRYPOINT ["dotnet", "VoskRealtimeApi.dll"]
