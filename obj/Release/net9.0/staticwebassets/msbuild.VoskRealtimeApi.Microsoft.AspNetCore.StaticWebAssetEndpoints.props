@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/VoskRealtimeApi/client/index.efdf3yga9i.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"efdf3yga9i"},{"Name":"integrity","Value":"sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="},{"Name":"label","Value":"_content/VoskRealtimeApi/client/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"476"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 12:08:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VoskRealtimeApi/client/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"476"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 12:08:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VoskRealtimeApi/client/main.an5ktlaal7.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\main.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"an5ktlaal7"},{"Name":"integrity","Value":"sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s\u002BpHeg8Q="},{"Name":"label","Value":"_content/VoskRealtimeApi/client/main.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2183"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s\u002BpHeg8Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 07:24:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/VoskRealtimeApi/client/main.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\main.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s\u002BpHeg8Q="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2183"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s\u002BpHeg8Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 07:24:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

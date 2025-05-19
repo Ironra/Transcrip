@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html",
+      "PackagePath": "staticwebassets\\client\\index.html"
+    },
+    {
+      "Id": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js",
+      "PackagePath": "staticwebassets\\client\\main.js"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.VoskRealtimeApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.VoskRealtimeApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.VoskRealtimeApi.props",
+      "PackagePath": "build\\VoskRealtimeApi.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.VoskRealtimeApi.props",
+      "PackagePath": "buildMultiTargeting\\VoskRealtimeApi.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.VoskRealtimeApi.props",
+      "PackagePath": "buildTransitive\\VoskRealtimeApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,702 @@
+{
+  "Version": 1,
+  "Hash": "bQdtOTKvFdxTcm5RsQmzUxu3p+ERa7hAvTFJ3wSvmxs=",
+  "Source": "VoskRealtimeApi",
+  "BasePath": "_content/VoskRealtimeApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "VoskRealtimeApi\\wwwroot",
+      "Source": "VoskRealtimeApi",
+      "ContentRoot": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\",
+      "BasePath": "_content/VoskRealtimeApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\3ers48vwtj-efdf3yga9i.gz",
+      "SourceId": "VoskRealtimeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/VoskRealtimeApi",
+      "RelativePath": "client/index#[.{fingerprint=efdf3yga9i}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ci9d9zeh5s",
+      "Integrity": "nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html"
+    },
+    {
+      "Identity": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\l6zl1qfy3a-an5ktlaal7.gz",
+      "SourceId": "VoskRealtimeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/VoskRealtimeApi",
+      "RelativePath": "client/main#[.{fingerprint=an5ktlaal7}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "01q7oy2zl4",
+      "Integrity": "fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js"
+    },
+    {
+      "Identity": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html",
+      "SourceId": "VoskRealtimeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\",
+      "BasePath": "_content/VoskRealtimeApi",
+      "RelativePath": "client/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "efdf3yga9i",
+      "Integrity": "RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\index.html"
+    },
+    {
+      "Identity": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js",
+      "SourceId": "VoskRealtimeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\",
+      "BasePath": "_content/VoskRealtimeApi",
+      "RelativePath": "client/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "an5ktlaal7",
+      "Integrity": "liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\main.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "client/index.efdf3yga9i.html",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\3ers48vwtj-efdf3yga9i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003164556962"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "315"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efdf3yga9i"
+        },
+        {
+          "Name": "label",
+          "Value": "client/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="
+        }
+      ]
+    },
+    {
+      "Route": "client/index.efdf3yga9i.html",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efdf3yga9i"
+        },
+        {
+          "Name": "label",
+          "Value": "client/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="
+        }
+      ]
+    },
+    {
+      "Route": "client/index.efdf3yga9i.html.gz",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\3ers48vwtj-efdf3yga9i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "efdf3yga9i"
+        },
+        {
+          "Name": "label",
+          "Value": "client/index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE="
+        }
+      ]
+    },
+    {
+      "Route": "client/index.html",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\3ers48vwtj-efdf3yga9i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003164556962"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "315"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="
+        }
+      ]
+    },
+    {
+      "Route": "client/index.html",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RuNtTAZnNN3mzrtVqJqoGoikdcLlSh5BUeY2UwYJpIU="
+        }
+      ]
+    },
+    {
+      "Route": "client/index.html.gz",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\3ers48vwtj-efdf3yga9i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "315"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 12:08:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nFnxRXwpp1OlgIbdCGN45B6XAKcatwosU7v1BbW95ZE="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.an5ktlaal7.js",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\l6zl1qfy3a-an5ktlaal7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000987166831"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1012"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "an5ktlaal7"
+        },
+        {
+          "Name": "label",
+          "Value": "client/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.an5ktlaal7.js",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "an5ktlaal7"
+        },
+        {
+          "Name": "label",
+          "Value": "client/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.an5ktlaal7.js.gz",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\l6zl1qfy3a-an5ktlaal7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "an5ktlaal7"
+        },
+        {
+          "Name": "label",
+          "Value": "client/main.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.js",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\l6zl1qfy3a-an5ktlaal7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000987166831"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1012"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.js",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\wwwroot\\client\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-liq74mCbLDw06YzMQuoAe1WHVa8fUwXBHp/s+pHeg8Q="
+        }
+      ]
+    },
+    {
+      "Route": "client/main.js.gz",
+      "AssetFile": "D:\\CTI\\JPV\\Desarrollo\\temp\\PrubaReconocimientoVoskaAPI2C#\\VoskRealtimeApi\\obj\\Release\\net9.0\\compressed\\l6zl1qfy3a-an5ktlaal7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:24:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMBTOlIJLqaoNpgqSWPOuHokOHH1FfndRYD/uRZKleY="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Nombre de la app en Fly.io
+app = "voskrealtimeapi"
+
+# Región primaria (usa el código de región: 'cdg' = Paris-CDG)
+primary_region = "cdg"
+
+# Señal para detener la app y timeout
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[build]
+  # Indica que use tu Dockerfile
+  image = "dockerfile"
+
+# Configura VM en plan gratuito: 256 MB RAM, shared CPU
+[[vm]]
+  size   = "shared-cpu-1x"
+  memory = "256mb"
+
+# Servicio principal expuesto por tu contenedor
+[[services]]
+  internal_port = 80
+  protocol      = "tcp"
+
+  # Puerto HTTP
+  [[services.ports]]
+    port = 80
+
+  # Puerto HTTPS (opcional; Fly hace TLS automáticamente)
+  [[services.ports]]
+    port     = 443
+    handlers = ["tls"]
