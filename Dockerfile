@@ -1,8 +1,8 @@
 # Base runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-ENV ASPNETCORE_URLS="http://+:5142;https://+:7299"
-EXPOSE 5142 7299
+ENV ASPNETCORE_URLS="http://+:5142"
+EXPOSE 5142
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
@@ -21,4 +21,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "VoskRealtimeApi.dll"]
+
 
