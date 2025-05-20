@@ -8,6 +8,12 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
+# Instala curl y unzip
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends curl unzip \
+ && rm -rf /var/lib/apt/lists/*
+
+# Descarga y descomprime el modelo
 RUN curl -L https://alphacephei.com/vosk/models/vosk-model-es-0.42.zip \
     -o model.zip \
  && unzip model.zip -d Models \
