@@ -8,6 +8,11 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
+RUN curl -L https://alphacephei.com/vosk/models/vosk-model-es-0.42.zip \
+    -o model.zip \
+ && unzip model.zip -d Models \
+ && rm model.zip
+ 
 # Copia sólo el csproj para cachear restore
 COPY ["VoskRealtimeApi.csproj", "./"]
 RUN dotnet restore "VoskRealtimeApi.csproj"
