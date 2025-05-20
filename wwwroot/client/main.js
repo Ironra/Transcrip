@@ -8,7 +8,9 @@ let ws, audioCtx, processor, input;
 function openSocket() {
   const protocol = location.protocol === 'https:' ? 'wss' : 'ws';
   //const socketUrl = `${protocol}://${location.hostname}:${location.port}/ws`;
-   const socketUrl = `${protocol}://${location.hostname}/ws`;
+ const socketUrl = `${protocol}://transcrip-1.onrender.com/ws`;
+  
+  
   ws = new WebSocket(socketUrl);
   ws.onmessage = e => {
     const msg = JSON.parse(e.data);
