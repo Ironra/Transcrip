@@ -6,6 +6,7 @@ using System.Net.WebSockets;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls($"http://0.0.0.0:{Environment.GetEnvironmentVariable("PORT") ?? "5142"}");
 var app = builder.Build();
 
 // Habilitar WebSockets
