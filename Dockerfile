@@ -2,8 +2,6 @@
 # 1) Imagen base de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-ENV ASPNETCORE_URLS="http://+:5142"
-EXPOSE 5142
 
 # 2) Imagen de build + publish
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
