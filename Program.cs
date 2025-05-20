@@ -3,10 +3,8 @@ using Microsoft.OpenApi.Models;           // Para OpenApiInfo
 using Swashbuckle.AspNetCore.SwaggerGen;  // Para AddSwaggerGen()
 using Swashbuckle.AspNetCore.SwaggerUI;
 var builder = WebApplication.CreateBuilder(args);
-
-
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5142";
-builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+builder.WebHost.UseUrls($"http://*:{port}");
 // Registrar el servicio de Vosk
 builder.Services.AddSingleton<IVoskService, VoskService>();
 
