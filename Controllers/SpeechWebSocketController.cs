@@ -23,7 +23,7 @@ namespace VoskRealtimeApi.Controllers
             }
 
             using var ws = await HttpContext.WebSockets.AcceptWebSocketAsync();
-            var buffer = new byte[4096];
+            var buffer = new byte[8192];
             WebSocketReceiveResult result;
 
             while ((result = await ws.ReceiveAsync(buffer, CancellationToken.None)).Count > 0)
@@ -33,7 +33,7 @@ namespace VoskRealtimeApi.Controllers
                 var msg = Encoding.UTF8.GetBytes(json);
                 await ws.SendAsync(msg, WebSocketMessageType.Text, true, CancellationToken.None);
             }
-
+Console.WriteLine("[WS] Bucle terminado. Estado: " + ws.State);
             // Envía el resultado final al cerrar
             var finalJson = _vosk.FinalResult();
             await ws.SendAsync(Encoding.UTF8.GetBytes(finalJson),
