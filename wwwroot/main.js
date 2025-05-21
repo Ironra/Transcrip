@@ -37,8 +37,10 @@ startBtn.onclick = async () => {
   input = audioCtx.createMediaStreamSource(stream);
 
   // 2) Crea un ScriptProcessorNode para capturar PCM
-  processor = audioCtx.createScriptProcessor(4096, 1, 1);
+  //processor = audioCtx.createScriptProcessor(4096, 1, 1);
+  processor = audioCtx.createScriptProcessor(2048, 1, 1);
   processor.onaudioprocess = e => {
+    console.log('onaudioprocess fired');
     const floatData = e.inputBuffer.getChannelData(0);
     // convierte Float32 [-1..1] -> Int16
     const int16 = new Int16Array(floatData.length);
