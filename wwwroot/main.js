@@ -14,6 +14,7 @@ function openSocket() {
 
   ws = new WebSocket(socketUrl);
   ws.onmessage = e => {
+    console.log('WebSocket abierto');
     const msg = JSON.parse(e.data);
     // VoskPartial -> msg.partial, VoskResult -> msg.text
     if (msg.partial) {
@@ -47,6 +48,7 @@ startBtn.onclick = async () => {
     }
     // envía al servidor
     if (ws.readyState === WebSocket.OPEN) {
+      console.log('Enviando audio:', int16.byteLength, 'bytes');
       ws.send(int16.buffer);
     }
   };

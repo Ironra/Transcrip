@@ -28,6 +28,7 @@ namespace VoskRealtimeApi.Controllers
 
             while ((result = await ws.ReceiveAsync(buffer, CancellationToken.None)).Count > 0)
             {
+                Console.WriteLine($"[WS] Recibidos {result.Count} bytes, tipo: {result.MessageType}");
                 var json = await _vosk.AcceptWaveformAsync(buffer, result.Count);
                 var msg = Encoding.UTF8.GetBytes(json);
                 await ws.SendAsync(msg, WebSocketMessageType.Text, true, CancellationToken.None);
