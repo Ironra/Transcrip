@@ -26,12 +26,29 @@ namespace VoskRealtimeApi.Controllers
             var buffer = new byte[8192];
             WebSocketReceiveResult result;
 
-            while ((result = await ws.ReceiveAsync(buffer, CancellationToken.None)).Count > 0)
+
+            //    while ((result = await ws.ReceiveAsync(buffer, CancellationToken.None)).Count > 0)
+            //     {
+            //         Console.WriteLine($"[WS] Recibidos {result.Count} bytes, tipo: {result.MessageType}");
+            //         var json = await _vosk.AcceptWaveformAsync(buffer, result.Count);
+            //         var msg = Encoding.UTF8.GetBytes(json);
+            //         await ws.SendAsync(msg, WebSocketMessageType.Text, true, CancellationToken.None);
+            //     }
+         while (ws.State == WebSocketState.Open)
             {
-                Console.WriteLine($"[WS] Recibidos {result.Count} bytes, tipo: {result.MessageType}");
-                var json = await _vosk.AcceptWaveformAsync(buffer, result.Count);
-                var msg = Encoding.UTF8.GetBytes(json);
-                await ws.SendAsync(msg, WebSocketMessageType.Text, true, CancellationToken.None);
+                result = await ws.ReceiveAsync(buffer, CancellationToken.None);
+                if (result.MessageType == WebSocketMessageType.Close)
+                {
+                    Console.WriteLine("[WS] Cliente cerró la conexión.");
+                    break;
+                }
+                if (result.Count > 0)
+                {
+                    Console.WriteLine($"[WS] Recibidos {result.Count} bytes, tipo: {result.MessageType}");
+                    var json = await _vosk.AcceptWaveformAsync(buffer, result.Count);
+                    var msg = Encoding.UTF8.GetBytes(json);
+                    await ws.SendAsync(msg, WebSocketMessageType.Text, true, CancellationToken.None);
+                }
             }
 Console.WriteLine("[WS] Bucle terminado. Estado: " + ws.State);
             // Envía el resultado final al cerrar
