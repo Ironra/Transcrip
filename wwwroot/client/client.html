@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cliente Vosk Realtime</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    button { margin-right: 1rem; padding: 0.5rem 1rem; }
+    pre { background: #f0f0f0; padding: 1rem; border-radius: 4px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Transcripción en tiempo real</h1>
+  <button id="start">Iniciar micrófono</button>
+  <button id="stop" disabled>Detener</button>
+  <pre id="log"></pre> 
+
+  <script>
+    const startBtn = document.getElementById('start');
+    const stopBtn  = document.getElementById('stop');
+    const logEl    = document.getElementById('log');
+    let currentText = '';
+    let ws, audioCtx, processor, input;
+
+    // Abre el WebSocket
+    function openSocket() {
+      const protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+      //const socketUrl = `wss://transcrip-1.onrender.com/ws`;
+const socketUrl = (location.protocol === 'https:' ? 'wss' : 'ws') + '://' + location.host + '/ws';
+      ws = new WebSocket(socketUrl);
+      ws.onopen = () => {
+        logEl.textContent = '[Conectado al servidor]\n';
+      };
+      ws.onmessage = e => {
+        const msg = JSON.parse(e.data);
+        // VoskPartial -> msg.partial, VoskResult -> msg.text
+        if (msg.partial) {
+          // muestra el texto final + parcial flotando
+          logEl.textContent = `${currentText}${msg.partial}`;
+        } else if (msg.text) {
+          // agrega al texto final y lo muestra
+          currentText += msg.text + ' ';
+          logEl.textContent = currentText;
+        }
+      };
+      ws.onerror = () => {
+        logEl.textContent += '\n[Error de WebSocket]';
+      };
+      ws.onclose = () => {
+        logEl.textContent += '\n[Conexión cerrada]';
+      };
+    }
+
+    startBtn.onclick = async () => {
+      openSocket();
+
+      // 1) Inicializa AudioContext
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      input = audioCtx.createMediaStreamSource(stream);
+
+      // 2) Crea un ScriptProcessorNode para capturar PCM
+      processor = audioCtx.createScriptProcessor(4096, 1, 1);
+      processor.onaudioprocess = e => {
+        const floatData = e.inputBuffer.getChannelData(0);
+        // convierte Float32 [-1..1] -> Int16
+        const int16 = new Int16Array(floatData.length);
+        for (let i = 0; i < floatData.length; i++) {
+          let s = Math.max(-1, Math.min(1, floatData[i]));
+          int16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+        }
+        // envía al servidor
+        if (ws.readyState === WebSocket.OPEN) {
+          ws.send(int16.buffer);
+        }
+      };
+
+      // 3) Conecta todo
+      input.connect(processor);
+      processor.connect(audioCtx.destination);
+
+      startBtn.disabled = true;
+      stopBtn.disabled  = false;
+      logEl.textContent = '[Iniciando transcripción…]';
+      currentText = '';
+    };
+
+    stopBtn.onclick = () => {
+      // 1) Cierra audio
+      processor.disconnect();
+      input.disconnect();
+      audioCtx.close();
+
+      // 2) Cierra WebSocket (el servidor te mandará el resultado final)
+      ws.close();
+
+      startBtn.disabled = false;
+      stopBtn.disabled  = true;
+    };
+  </script>
+</body>
+</html>
