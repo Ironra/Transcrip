@@ -11,7 +11,8 @@ namespace VoskRealtimeApi.Services
 
         public VoskService()
         {
-            _model = new Model("Models/vosk-model-small-es-0.42");
+            //_model = new Model("Models/vosk-model-small-es-0.42");
+            _model = new Model("Models/vosk-model-es-0.42");
             _recognizer = new VoskRecognizer(_model, 16000.0f);
         }
 
