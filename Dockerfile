@@ -14,7 +14,8 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Descarga y descomprime el modelo
-RUN curl -L https://alphacephei.com/vosk/models/vosk-model-small-es-0.42.zip \
+# RUN curl -L https://alphacephei.com/vosk/models/vosk-model-small-es-0.42.zip \
+RUN curl -L https://alphacephei.com/vosk/models/vosk-model-es-0.42.zip \
     -o model.zip \
  && unzip model.zip -d Models \
  && rm model.zip
