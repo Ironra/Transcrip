@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VoskRealtimeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aed379ead465d79b4cc999662ec36efb0591babd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aea01cc3554d5e29bb7b959ceab52d7ef1206422")]
 [assembly: System.Reflection.AssemblyProductAttribute("VoskRealtimeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VoskRealtimeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
